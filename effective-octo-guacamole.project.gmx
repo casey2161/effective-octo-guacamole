@@ -21,6 +21,9 @@
     <sound>sound\snd_walk</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="first_floor_sprites">
+      <sprite>sprites\wall_tile</sprite>
+    </sprites>
     <sprite>sprites\bullet_sprite</sprite>
     <sprites name="testing">
       <sprite>sprites\spr_runVert</sprite>
@@ -57,6 +60,7 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\starting_background</background>
+    <background>background\floor_tiles</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -68,14 +72,18 @@
     <object>objects\inventory</object>
     <object>objects\boots</object>
     <object>objects\bullet</object>
-    <object>objects\obj_bedroom</object>
-    <object>objects\wall</object>
-    <object>objects\table_obj</object>
-    <object>objects\hamper_obj</object>
-    <object>objects\kitchen_obj</object>
+    <objects name="bedroom_group">
+      <object>objects\hamper_obj</object>
+      <object>objects\kitchen_obj</object>
+      <object>objects\obj_bedroom</object>
+      <object>objects\table_obj</object>
+      <object>objects\wall</object>
+      <object>objects\transition</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\house_room</room>
+    <room>rooms\floor_one</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
