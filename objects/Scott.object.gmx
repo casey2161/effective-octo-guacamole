@@ -29,7 +29,7 @@
     var lr, ud;
     
     var vel = 4;
-    if (ds_map_find_value(global.inv, "boots") &gt;= 1) {
+    if (inv_get("boots") &gt;= 1) {
         vel = 16;
     }
     

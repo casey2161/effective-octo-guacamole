@@ -16,6 +16,10 @@
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\inv_get.gml</script>
+    <script>scripts\inv_set.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Scott</object>
     <object>objects\inventory</object>
