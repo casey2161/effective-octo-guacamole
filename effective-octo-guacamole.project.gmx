@@ -8,23 +8,38 @@
     <sound>sound\snd_quack</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_test</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprite2</sprite>
-    <sprite>sprites\spr_runHoriz</sprite>
-    <sprite>sprites\spr_runVert</sprite>
     <sprite>sprites\bullet_sprite</sprite>
-    <sprite>sprites\scott_walking_side</sprite>
-    <sprite>sprites\scott_front_idle</sprite>
-    <sprite>sprites\scott_back_idle</sprite>
-    <sprite>sprites\scott_left_idle</sprite>
-    <sprite>sprites\scott_walking_back</sprite>
-    <sprite>sprites\scott_walking_front</sprite>
-    <sprite>sprites\bedroom</sprite>
-    <sprite>sprites\house_spr</sprite>
-    <sprite>sprites\teeburu</sprite>
-    <sprite>sprites\hamper</sprite>
-    <sprite>sprites\kitchen</sprite>
+    <sprites name="testing">
+      <sprite>sprites\spr_runVert</sprite>
+      <sprite>sprites\spr_runHoriz</sprite>
+      <sprite>sprites\sprite1</sprite>
+      <sprite>sprites\spr_test</sprite>
+    </sprites>
+    <sprites name="scott_uptight">
+      <sprite>sprites\scott_walking_side</sprite>
+      <sprite>sprites\scott_front_idle</sprite>
+      <sprite>sprites\scott_back_idle</sprite>
+      <sprite>sprites\scott_left_idle</sprite>
+      <sprite>sprites\scott_walking_back</sprite>
+      <sprite>sprites\scott_walking_front</sprite>
+    </sprites>
+    <sprites name="bedroom_sprites">
+      <sprite>sprites\hamper</sprite>
+      <sprite>sprites\kitchen</sprite>
+      <sprite>sprites\teeburu</sprite>
+      <sprite>sprites\house_spr</sprite>
+      <sprite>sprites\bedroom</sprite>
+    </sprites>
+    <sprites name="scott_book">
+      <sprite>sprites\book_back_idle</sprite>
+      <sprite>sprites\book_back_walking</sprite>
+      <sprite>sprites\book_front_idle</sprite>
+      <sprite>sprites\book_front_walking</sprite>
+      <sprite>sprites\book_left_idle</sprite>
+      <sprite>sprites\book_left_walk</sprite>
+      <sprite>sprites\book_right_idle</sprite>
+      <sprite>sprites\book_right_walking</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
