@@ -1,0 +1,9 @@
+{
+    var lr, ud;
+    
+    lr = keyboard_check(vk_left) - keyboard_check(vk_right);
+    ud = keyboard_check(vk_up) - keyboard_check(vk_right);
+    var speed = 4;
+    x += lr * 4;
+    y += ud * 4;
+}
