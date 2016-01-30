@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>inv_set("boots", 1);
+audio_play_sound(snd_quack, 0, 0);
 </string>
           </argument>
         </arguments>
