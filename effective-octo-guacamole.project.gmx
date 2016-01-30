@@ -13,6 +13,7 @@
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_runHoriz</sprite>
     <sprite>sprites\spr_runVert</sprite>
+    <sprite>sprites\bullet_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -26,6 +27,7 @@
     <object>objects\Scott</object>
     <object>objects\inventory</object>
     <object>objects\boots</object>
+    <object>objects\bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
