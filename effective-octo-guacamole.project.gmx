@@ -11,6 +11,8 @@
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\spr_runHoriz</sprite>
+    <sprite>sprites\spr_runVert</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>

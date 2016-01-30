@@ -38,6 +38,18 @@
     x += lr * vel;
     y += ud * vel;
     
+    if (lr!=0) {
+        if (ud != 0) {
+            sprite_index = spr_runVert;
+        } else {
+            sprite_index = spr_runHoriz;
+        }
+    } else if (ud!=0) {
+        sprite_index = spr_runVert;
+    } else {
+        sprite_index = spr_test;
+    }
+    
     if (x &lt; 0) {
         x = 0;
     }
