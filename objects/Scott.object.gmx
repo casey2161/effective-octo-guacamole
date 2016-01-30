@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -36,7 +36,8 @@ self.walkdown = self.walkdowncooldown;
 
 self.recharge_time = 30; // 1 second, lower is better
 self.reload = recharge_time;
-
+self.oldx = x;
+self.oldy = y;
 self.dir = 0;
 
 </string>
@@ -74,11 +75,19 @@ self.dir = 0;
         self.energy = self.max_energy;
     }
     
-    lr = keyboard_check(ord('D')) - keyboard_check(ord('A')) 
-    ud = keyboard_check(ord('S')) - keyboard_check(ord('W'));
-    if ((lr != 0 || ud != 0) &amp;&amp; self.walkdown &lt; 0) {
-        audio_play_sound(snd_walk, 2, 0);
-        self.walkdown = self.walkdowncooldown;
+    if ( room != house_room ) {
+        lr = keyboard_check(ord('D')) - keyboard_check(ord('A')) 
+        ud = keyboard_check(ord('S')) - keyboard_check(ord('W'));
+    } else {
+        lr = x - self.oldx;
+        ud = y - self.oldy;
+        self.oldx = x;
+        self.oldy = y;
+    }
+    
+    if (lr != 0 || ud != 0) {
+            audio_play_sound(snd_walk, 2, 0);
+            self.walkdown = self.walkdowncooldown;
     }
     var newx = x + lr * vel;
     var newy = y + ud * vel;

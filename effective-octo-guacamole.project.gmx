@@ -61,8 +61,12 @@
     <background>background\background0</background>
     <background>background\starting_background</background>
     <background>background\floor_tiles</background>
+    <background>background\menu_background</background>
+    <background>background\background4</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_test</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\inv_get.gml</script>
     <script>scripts\inv_set.gml</script>
@@ -80,8 +84,11 @@
       <object>objects\wall</object>
       <object>objects\transition</object>
     </objects>
+    <object>objects\menu_controller</object>
+    <object>objects\cutscene1_controller</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\house_room</room>
     <room>rooms\floor_one</room>
   </rooms>
