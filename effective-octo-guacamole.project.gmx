@@ -28,6 +28,7 @@
     <object>objects\inventory</object>
     <object>objects\boots</object>
     <object>objects\bullet</object>
+    <object>objects\health</object>
   </objects>
   <timelines name="timelines"/>
   <rooms name="rooms">

@@ -117,7 +117,7 @@ self.reload = recharge_time;
         make_obj = false;
     }
 
-    if (make_obj &amp;&amp; self.cooldown &lt; 0 &amp;&amp; self.energy &gt; 5) {
+    if (make_obj &amp;&amp; self.cooldown &lt; 0 &amp;&amp; self.energy &gt;= 5) {
         self.cooldown = self.fire_rate;
         inst = instance_create(x, y, bullet);
         self.energy -= 5;
@@ -139,6 +139,43 @@ self.reload = recharge_time;
     
     
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>500</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring>draw_self();</codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_healthbar(view_xview[0]+10, view_yview[0]+10, view_xview[0]+110, view_yview[0]+30, self.energy / self.max_energy * 100, c_black, c_red, c_green, 0, true, true);
 </string>
           </argument>
         </arguments>
