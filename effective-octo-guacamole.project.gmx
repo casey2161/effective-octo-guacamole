@@ -6,6 +6,19 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_quack</sound>
+    <sound>sound\snd_creepyNoise</sound>
+    <sound>sound\snd_death1</sound>
+    <sound>sound\snd_death2</sound>
+    <sound>sound\snd_enemy1</sound>
+    <sound>sound\snd_hitNoise</sound>
+    <sound>sound\snd_shoot1</sound>
+    <sound>sound\snd_shoot2</sound>
+    <sound>sound\snd_shoot3</sound>
+    <sound>sound\snd_slime1</sound>
+    <sound>sound\snd_slime2</sound>
+    <sound>sound\snd_squeek</sound>
+    <sound>sound\snd_stair</sound>
+    <sound>sound\snd_walk</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\bullet_sprite</sprite>
@@ -61,7 +74,6 @@
     <object>objects\hamper_obj</object>
     <object>objects\kitchen_obj</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\house_room</room>
   </rooms>

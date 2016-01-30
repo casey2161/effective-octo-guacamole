@@ -31,6 +31,8 @@ self.cooldown = self.fire_rate;
 
 self.max_energy = 100;
 self.energy = self.max_energy;
+self.walkdowncooldown = 4;
+self.walkdown = self.walkdowncooldown;
 
 self.recharge_time = 30; // 1 second, lower is better
 self.reload = recharge_time;
@@ -74,6 +76,10 @@ self.dir = 0;
     
     lr = keyboard_check(ord('D')) - keyboard_check(ord('A')) 
     ud = keyboard_check(ord('S')) - keyboard_check(ord('W'));
+    if ((lr != 0 || ud != 0) &amp;&amp; self.walkdown &lt; 0) {
+        audio_play_sound(snd_walk, 2, 0);
+        self.walkdown = self.walkdowncooldown;
+    }
     var newx = x + lr * vel;
     var newy = y + ud * vel;
     
@@ -146,6 +152,7 @@ self.dir = 0;
     if (make_obj &amp;&amp; self.cooldown &lt; 0 &amp;&amp; self.energy &gt;= 5) {
         self.cooldown = self.fire_rate;
         inst = instance_create(x, y, bullet);
+        audio_play_sound(snd_shoot1, 1,0);
         self.energy -= 5;
         with (inst) {
             speed = 4;
@@ -162,9 +169,7 @@ self.dir = 0;
     //timers
     self.reload -= 1;
     self.cooldown -= 1;
-    
-    
-    
+    self.walkdown -= 1; 
     
 }
 </string>
