@@ -14,9 +14,21 @@
     <sprite>sprites\spr_runHoriz</sprite>
     <sprite>sprites\spr_runVert</sprite>
     <sprite>sprites\bullet_sprite</sprite>
+    <sprite>sprites\scott_walking_side</sprite>
+    <sprite>sprites\scott_front_idle</sprite>
+    <sprite>sprites\scott_back_idle</sprite>
+    <sprite>sprites\scott_left_idle</sprite>
+    <sprite>sprites\scott_walking_back</sprite>
+    <sprite>sprites\scott_walking_front</sprite>
+    <sprite>sprites\bedroom</sprite>
+    <sprite>sprites\house_spr</sprite>
+    <sprite>sprites\teeburu</sprite>
+    <sprite>sprites\hamper</sprite>
+    <sprite>sprites\kitchen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\starting_background</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -28,11 +40,15 @@
     <object>objects\inventory</object>
     <object>objects\boots</object>
     <object>objects\bullet</object>
-    <object>objects\health</object>
+    <object>objects\obj_bedroom</object>
+    <object>objects\wall</object>
+    <object>objects\table_obj</object>
+    <object>objects\hamper_obj</object>
+    <object>objects\kitchen_obj</object>
   </objects>
   <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\house_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
