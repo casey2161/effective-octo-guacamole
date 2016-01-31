@@ -75,7 +75,7 @@ self.dir = 0;
         self.energy = self.max_energy;
     }
     
-    if ( room != house_room ) {
+    if (true) {
         lr = keyboard_check(ord('D')) - keyboard_check(ord('A')) 
         ud = keyboard_check(ord('S')) - keyboard_check(ord('W'));
     } else {
