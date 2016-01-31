@@ -6,7 +6,7 @@
   <vsnap>50</vsnap>
   <hsnap>50</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>10</speed>
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>

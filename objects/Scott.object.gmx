@@ -165,7 +165,7 @@ self.dir = 0;
         audio_play_sound(snd_shoot1, 1,0);
         self.energy -= 5;
         with (inst) {
-            speed = 4;
+            speed = 15;
             oldvel = speed;
             direction = dir;
             image_angle = dir;

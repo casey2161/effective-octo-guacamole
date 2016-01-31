@@ -66,9 +66,12 @@
     <background>background\background4</background>
     <background>background\bus_sky</background>
     <background>background\bus</background>
+    <background>background\office_space</background>
+    <background>background\floor2Tiles</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_test</path>
+    <path>paths\path1</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\inv_get.gml</script>
@@ -99,6 +102,7 @@
     <room>rooms\room_menu</room>
     <room>rooms\room_bus</room>
     <room>rooms\house_room</room>
+    <room>rooms\office_room</room>
     <room>rooms\floor_one</room>
   </rooms>
   <help>
