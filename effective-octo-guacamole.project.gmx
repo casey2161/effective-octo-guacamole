@@ -56,6 +56,7 @@
       <sprite>sprites\book_right_idle</sprite>
       <sprite>sprites\book_right_walking</sprite>
     </sprites>
+    <sprite>sprites\spr_birdSatan</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
