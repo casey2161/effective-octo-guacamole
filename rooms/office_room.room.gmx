@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>300</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>10</speed>
   <persistent>0</persistent>
@@ -58,6 +58,7 @@
     <instance objName="wall" x="512" y="0" name="inst_BAB663FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="512" y="64" name="inst_F13B2B66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="432" y="96" name="inst_6A33006C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="book" x="402" y="119" name="inst_07608566" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="128" y="160" w="16" h="16" xo="0" yo="0" id="10000364" name="inst_0D84BE8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

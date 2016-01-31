@@ -40,6 +40,16 @@ self.oldx = x;
 self.oldy = y;
 self.dir = 0;
 
+//sprite set
+self.walkLeft = scott_walking_side;
+self.walkRight = scott_walking_side;
+self.walkFront = scott_walking_front;
+self.walkBack = scott_walking_back;
+self.idleLeft = scott_left_idle;
+self.idleRight = scott_left_idle;
+self.idleFront = scott_front_idle;
+self.idleBack = scott_back_idle;
+
 </string>
           </argument>
         </arguments>
@@ -115,31 +125,31 @@ self.dir = 0;
     
     //face directions
     if (lr &gt; 0) {
-        sprite_index = scott_walking_side;
+        sprite_index = walkRight;
         image_xscale = -1;
         self.dir = 2;
     } else if (lr &lt; 0) {
-        sprite_index = scott_walking_side;
+        sprite_index = walkLeft;
         image_xscale = 1;
         self.dir = 2;
     } else if (ud &gt; 0) {
-        sprite_index = scott_walking_front;
+        sprite_index = walkFront;
         image_xscale = 1;
         self.dir = 1;
     } else if (ud &lt; 0) {
-        sprite_index = scott_walking_back;
+        sprite_index = walkBack;
         image_xscale = 1;
         self.dir = 3;
     } else if (self.dir == 0) {
-        sprite_index = scott_left_idle;
+        sprite_index = idleLeft;
     } else if (self.dir == 1) {
-        sprite_index = scott_front_idle;
+        sprite_index = idleFront;
     } else if (self.dir == 2) {
-        sprite_index = scott_left_idle;
+        sprite_index = idleRight;
     } else if (self.dir = 3) {
-        sprite_index = scott_back_idle;
+        sprite_index = idleBack;
     } else {
-        sprite_index = scott_front_idle;
+        sprite_index = idleFront;
     }
 
     
