@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -92,6 +92,7 @@ self.dir = 0;
     var newx = x + lr * vel;
     var newy = y + ud * vel;
     
+    //object collision
     if (place_free(newx, newy)) {
         x = newx;
         y = newy;
@@ -219,6 +220,7 @@ self.dir = 0;
           <argument>
             <kind>1</kind>
             <string>draw_healthbar(view_xview[0]+10, view_yview[0]+10, view_xview[0]+110, view_yview[0]+10, self.energy / self.max_energy * 100, c_black, c_red, c_green, 0, true, true);
+speak(view_xview[0]+120, view_yview[0]+10, c_black, "Energy:"+string(self.energy));
 </string>
           </argument>
         </arguments>

@@ -73,7 +73,11 @@
   <scripts name="scripts">
     <script>scripts\inv_get.gml</script>
     <script>scripts\inv_set.gml</script>
+    <script>scripts\speak.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\writing</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Scott</object>
     <object>objects\inventory</object>
