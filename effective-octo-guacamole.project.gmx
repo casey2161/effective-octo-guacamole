@@ -124,14 +124,15 @@
     <objects name="sound_objects">
       <object>objects\intro_music_obj</object>
       <object>objects\office_music_object</object>
+      <object>objects\city_music_obj</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\house_room</room>
     <room>rooms\room_bus</room>
-    <room>rooms\office_room</room>
     <room>rooms\floor_one</room>
+    <room>rooms\office_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
