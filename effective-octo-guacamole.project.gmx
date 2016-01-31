@@ -5,20 +5,30 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_quack</sound>
-    <sound>sound\snd_creepyNoise</sound>
-    <sound>sound\snd_death1</sound>
-    <sound>sound\snd_death2</sound>
-    <sound>sound\snd_enemy1</sound>
-    <sound>sound\snd_hitNoise</sound>
-    <sound>sound\snd_shoot1</sound>
-    <sound>sound\snd_shoot2</sound>
-    <sound>sound\snd_shoot3</sound>
-    <sound>sound\snd_slime1</sound>
-    <sound>sound\snd_slime2</sound>
-    <sound>sound\snd_squeek</sound>
-    <sound>sound\snd_stair</sound>
-    <sound>sound\snd_walk</sound>
+    <sounds name="sfx">
+      <sounds name="shooting">
+        <sound>sound\snd_shoot1</sound>
+        <sound>sound\snd_shoot2</sound>
+        <sound>sound\snd_hitNoise</sound>
+        <sound>sound\snd_shoot3</sound>
+      </sounds>
+      <sounds name="death">
+        <sound>sound\snd_death2</sound>
+        <sound>sound\snd_death1</sound>
+      </sounds>
+      <sounds name="enemy">
+        <sound>sound\snd_enemy1</sound>
+        <sound>sound\snd_slime1</sound>
+        <sound>sound\snd_slime2</sound>
+      </sounds>
+      <sounds name="movement">
+        <sound>sound\snd_walk</sound>
+        <sound>sound\snd_stair</sound>
+      </sounds>
+      <sound>sound\snd_squeek</sound>
+      <sound>sound\snd_quack</sound>
+      <sound>sound\snd_creepyNoise</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="first_floor_sprites">
@@ -82,10 +92,12 @@
     <font>fonts\writing</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Scott</object>
-    <object>objects\inventory</object>
-    <object>objects\boots</object>
-    <object>objects\bullet</object>
+    <objects name="scott">
+      <object>objects\Scott</object>
+      <object>objects\inventory</object>
+      <object>objects\boots</object>
+      <object>objects\bullet</object>
+    </objects>
     <objects name="bedroom_group">
       <object>objects\hamper_obj</object>
       <object>objects\kitchen_obj</object>
@@ -94,9 +106,15 @@
       <object>objects\wall</object>
       <object>objects\transition</object>
     </objects>
-    <object>objects\menu_controller</object>
-    <object>objects\house_controller</object>
-    <object>objects\obj_pause</object>
+    <objects name="enemy">
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_birdSatan</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\menu_controller</object>
+      <object>objects\house_controller</object>
+      <object>objects\obj_pause</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
