@@ -54,6 +54,7 @@
       <sprite>sprites\scott_walking_back</sprite>
       <sprite>sprites\scott_walking_front</sprite>
       <sprite>sprites\scott_walking_left</sprite>
+      <sprite>sprites\scott_right_idle</sprite>
     </sprites>
     <sprites name="bedroom_sprites">
       <sprite>sprites\hamper</sprite>
@@ -122,6 +123,7 @@
     <objects name="controllers">
       <object>objects\menu_controller</object>
       <object>objects\house_controller</object>
+      <object>objects\office_controller</object>
       <object>objects\obj_pause</object>
     </objects>
     <objects name="sound_objects">

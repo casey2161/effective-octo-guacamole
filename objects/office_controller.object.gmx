@@ -29,16 +29,11 @@
 drawHeight = height - (height/6);
 textToggle = false;
 
-hamp = "There’s a faint odor coming from the hamper."
-sink = "Left the dishes in the sink again.";
-bed = "What’s the point?";
-trash = "It’s starting to smell.";
-bathDoor = "... it’s better to keep this door closed.";
-fridge = "There’s a few cans of soda left.";
-toaster = "You’ve never used this.";
-oven = "The stovetop is greasy.";
-houseBook = "It’s a cookbook. The cover is coated in dust.";
-mirror = "The mirror is dirty. It’s hard to see yourself.";
+cowoerkers = "There’s no reason to talk to them.";
+plants = "They’re all fake.";
+spellbook = "It looks like a book you ordered online. It’s older than it looked in the picture. It creaks when you open it. → It’s written in a language you can’t understand, and there are drawings of strange creatures and circles throughout. → Taped to the inside of the back cover is a list of items with an incantation. → You don’t really believe it’ll work, but you already ordered the book…";
+desk = "There doesn’t seem to be any reason to stay at work now.";
+
 </string>
           </argument>
         </arguments>
@@ -67,27 +62,9 @@ mirror = "The mirror is dirty. It’s hard to see yourself.";
     xPos = Scott.x;
     yPos = Scott.y;
     if (point_distance(xPos, yPos, 365, 100) &lt; 40) {
-        room_goto(room_bus);
+        //room_goto(room_bus);
     } else if (point_distance(xPos, yPos, 250, 200) &lt; 20) {
         speak(view_xview[0]+5,drawHeight+2,c_white, hamp);
-    } else if (point_distance(xPos, yPos, 417, 315) &lt; 20) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, sink);
-    } else if (point_distance(xPos, yPos, 50, 128) &lt; 70) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, bed);
-    } else if (point_distance(xPos, yPos, 108, 323) &lt; 50) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, trash);
-    } else if (point_distance(xPos, yPos, 490, 100) &lt; 20) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, bathDoor);
-    } else if (point_distance(xPos, yPos, 460, 260) &lt; 20) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, fridge);
-    } else if (point_distance(xPos, yPos, 358, 227) &lt; 40) {
-        speak(view_xview[0]+5,drawHeight+2,c_white,toaster);
-    } else if (point_distance(xPos, yPos, 409, 247) &lt; 30) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, oven);
-    } else if (point_distance(xPos, yPos, 508, 206) &lt; 70) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, houseBook);
-    } else if (point_distance(xPos, yPos, 250, 53) &lt; 50) {
-        speak(view_xview[0]+5,drawHeight+2,c_white, mirror);
     } else {
         textToggle = false;
     }

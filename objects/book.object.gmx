@@ -30,13 +30,15 @@
         inv_set("book", 1);
         Scott.walkRight = book_right_walking; 
         Scott.walkLeft = book_left_walk;
-        Scott.walkfront = book_front_walking;
+        Scott.walkFront = book_front_walking;
         Scott.walkBack = book_back_walking;
         Scott.idleRight = book_right_idle;
         Scott.idleLeft = book_left_idle;
         Scott.idleFront = book_front_idle;
         Scott.idleBack = book_back_idle;
+        Scott.hasBook = true;
         //execute dialogue add to inventory and change sprites
+        instance_destroy();
     }
 </string>
           </argument>

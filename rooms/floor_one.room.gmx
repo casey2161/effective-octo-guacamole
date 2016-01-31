@@ -53,6 +53,7 @@
   <instances>
     <instance objName="Scott" x="875" y="894" name="inst_187F225E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="city_music_obj" x="50" y="150" name="inst_DBF07FC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="menu_controller" x="50" y="100" name="inst_DA2B60EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="floor_tiles" x="0" y="0" w="50" h="50" xo="50" yo="0" id="10000369" name="inst_6572606A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
