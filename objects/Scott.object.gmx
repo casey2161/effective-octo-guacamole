@@ -63,7 +63,7 @@ self.dir = 0;
           <argument>
             <kind>1</kind>
             <string>{
-    
+    if (room &gt; house_room &amp;&amp; global.paused) exit;
     var lr, ud;
     
     var vel = 8;
@@ -165,6 +165,7 @@ self.dir = 0;
         self.energy -= 5;
         with (inst) {
             speed = 4;
+            oldvel = speed;
             direction = dir;
             image_angle = dir;
         }

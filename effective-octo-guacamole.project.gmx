@@ -89,6 +89,7 @@
     </objects>
     <object>objects\menu_controller</object>
     <object>objects\house_controller</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="5" enumb="1">
+    <event eventtype="10" enumb="1">
       <action>
         <libid>1</libid>
         <id>222</id>
