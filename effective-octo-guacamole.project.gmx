@@ -29,6 +29,11 @@
       <sound>sound\snd_quack</sound>
       <sound>sound\snd_creepyNoise</sound>
     </sounds>
+    <sounds name="music">
+      <sound>sound\city_music</sound>
+      <sound>sound\intro_music</sound>
+      <sound>sound\office_music</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="first_floor_sprites">
@@ -119,13 +124,18 @@
       <object>objects\house_controller</object>
       <object>objects\obj_pause</object>
     </objects>
+    <objects name="sound_objects">
+      <object>objects\intro_music_obj</object>
+      <object>objects\office_music_object</object>
+      <object>objects\city_music_obj</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\room_bus</room>
     <room>rooms\house_room</room>
-    <room>rooms\office_room</room>
+    <room>rooms\room_bus</room>
     <room>rooms\floor_one</room>
+    <room>rooms\office_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

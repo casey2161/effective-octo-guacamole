@@ -59,6 +59,7 @@
     <instance objName="wall" x="512" y="64" name="inst_F13B2B66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="wall" x="432" y="96" name="inst_6A33006C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="book" x="402" y="119" name="inst_07608566" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="office_music_object" x="128" y="192" name="inst_7C879B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="128" y="160" w="16" h="16" xo="0" yo="0" id="10000364" name="inst_0D84BE8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
